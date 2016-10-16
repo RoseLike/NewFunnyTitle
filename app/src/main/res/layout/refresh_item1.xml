@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+ <ImageView
+     android:layout_gravity="center"
+     android:id="@+id/item_imageId"
+     android:src="@mipmap/ic_launcher"
+     android:layout_margin="5dp"
+     android:layout_width="150dp"
+     android:layout_height="match_parent" />
+    <TextView
+        android:layout_toRightOf="@id/item_imageId"
+        android:id="@+id/item_titletextId"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:paddingRight="10dp"
+        android:text="hehehehehehehehehehehehehehehehehehehehheheh"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/item_numId"
+        android:text="140"
+        android:gravity="bottom"
+        android:layout_toRightOf="@id/item_imageId"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/item_titletextId"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_timeId"
+        android:text="一天前"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">趣头条</string>
+    <string name="action_settings">Settings</string>
+    <string name="videobutton">视频</string>
+    <string name="myselfbutton">我的</string>
+    <string name="refreshbutton">刷新</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3_activity_menu">Main3ActivityMenu</string>
+</resources>

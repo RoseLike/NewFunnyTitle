@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_relativeId"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    >
+    <FrameLayout
+        android:id="@+id/frameId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/video_imageId"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ImageView>
+        <TextView
+            android:id="@+id/frametextviewId"
+            android:textStyle="bold"
+            android:text="hehehehe"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/frameimagebuId"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_gravity="center"
+            android:background="@drawable/video_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/video_imagebuttomId"
+        android:src="@drawable/ic_action_play"
+        android:layout_width="35dp"
+        android:scaleType="fitXY"
+        android:layout_below="@id/frameId"
+        android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/video_numtextId"
+        android:text="24324"
+        android:layout_below="@id/frameId"
+        android:layout_toRightOf="@id/video_imagebuttomId"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+    <ImageButton
+        android:id="@+id/collectId"
+        android:scaleType="fitXY"
+        android:src="@drawable/rating_star_off"
+        android:layout_below="@id/frameId"
+        android:layout_alignParentRight="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <ImageButton
+        android:id="@+id/shareId"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_share"
+        android:layout_below="@id/frameId"
+        android:layout_toLeftOf="@id/collectId"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+</RelativeLayout>

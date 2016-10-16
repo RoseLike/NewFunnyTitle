@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.secondproject.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutId"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    <LinearLayout
+        android:id="@+id/relativeid"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/relative_imageId"
+            android:src="@drawable/icon_main_tab_news_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/relative_textId"
+            android:text="刷新"
+            android:textSize="15sp"
+            android:textColor="#0f0"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/relative_imageId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/relativeid2"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/relative_imageId2"
+            android:src="@drawable/icon_main_tab_video_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/relative_textId2"
+            android:text="视频"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/relative_imageId2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/relativeid3"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/relative_imageId3"
+            android:src="@drawable/icon_main_tab_person_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/relative_textId3"
+            android:text="我的"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/relative_imageId3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPagerId"
+         android:layout_above="@id/linearLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</RelativeLayout>
